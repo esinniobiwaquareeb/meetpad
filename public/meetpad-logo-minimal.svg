@@ -1,0 +1,32 @@
+<svg width="160" height="45" viewBox="0 0 160 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Simple icon -->
+  <g transform="translate(5, 8)">
+    <!-- Background -->
+    <rect x="0" y="0" width="24" height="24" rx="6" fill="#3B82F6"/>
+    
+    <!-- Three dots representing people -->
+    <circle cx="8" cy="10" r="2" fill="white" opacity="0.8"/>
+    <circle cx="12" cy="8" r="2.5" fill="white"/>
+    <circle cx="16" cy="10" r="2" fill="white" opacity="0.8"/>
+    
+    <!-- Connection lines -->
+    <path d="M12 10.5L9 10" stroke="white" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+    <path d="M12 10.5L15 10" stroke="white" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+  </g>
+  
+  <!-- Text - Meet and Pad side by side -->
+  <g transform="translate(40, 8)">
+    <text x="0" y="18" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="600" fill="#1F2937">Meet</text>
+    <text x="45" y="18" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="600" fill="#3B82F6">Pad</text>
+  </g>
+  
+  <!-- Colored dots after the text -->
+  <g transform="translate(40, 8)">
+    <circle cx="95" cy="10" r="1.5" fill="#EF4444"/>
+    <circle cx="98" cy="10" r="1.5" fill="#F59E0B"/>
+    <circle cx="101" cy="10" r="1.5" fill="#10B981"/>
+  </g>
+  
+  <!-- Tagline below -->
+  <text x="40" y="35" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="400" fill="#6B7280">meetings made simple</text>
+</svg> 

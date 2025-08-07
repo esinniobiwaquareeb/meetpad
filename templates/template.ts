@@ -1,0 +1,179 @@
+export const template = (payload: any) => {
+  return `
+   <!DOCTYPE html>
+<html style="font-size: 62.5%">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @media (max-width: 37.5em) {
+        .content {
+          width: 100% !important;
+          display: block !important;
+          padding: 1rem !important;
+        }
+        .header,
+        .body,
+        .footer {
+          padding: 2rem !important;
+        }
+
+        .body {
+          font-size: 1.8rem;
+        }
+      }
+    </style>
+  </head>
+  <body
+    style="
+      font-family: 'Ubuntu', 'Poppins', Arial, sans-serif;
+      font-size: 1.6rem;
+    "
+  >
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        <td align="center" style="padding: 2rem">
+          <table
+            class="content"
+            width="600"
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            style="border-collapse: collapse; border: 1px solid #ccc"
+          >
+            <!-- Header -->
+            <tr>
+              <td
+                class="header"
+                style="
+                  background-color: #fff;
+                  padding: 0 2rem 2rem 2rem;
+                  text-align: center;
+                  color: #fff;
+                  font-size: 2.4rem;
+                "
+              >
+                <img src="" alt="" />
+                <div
+                  class="logo"
+                  style="
+                    position: relative;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: fit-content;
+                  "
+                >
+                  <img
+                    src="https://meetpad.app/meetpad-logo.svg"
+                    alt="MeetPad logo"
+                  />
+                </div>
+                <strong
+                  style="color: #333; text-align: left; padding: 0 0 0 2rem"
+                >
+                  MEETING NOTIFICATION
+                </strong>
+              </td>
+            </tr>
+
+            <!-- Body -->
+            <tr>
+              <td
+                class="body"
+                style="
+                  padding: 0 4rem;
+                  text-align: left;
+                  font-size: 1.6rem;
+                  line-height: 1.6;
+                "
+              >
+                Dear ${
+                  payload || "default"
+                }, This is a friendly reminder about your upcoming
+                consultation with ${payload || "default"}  on ${
+    payload || "default"
+  }  at ${payload || "default"} .
+                Your appointment will take place via, ${
+                  payload || "default"
+                }  If
+                you need to reschedule or cancel your appointment, please click
+                the link below: ${payload || "default"} 
+                <br />
+                <br />
+                Best regards, <br />
+                The MeetPad Team
+                <br />
+                <br />
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                class="body"
+                style="
+                  padding: 4rem;
+                  text-align: left;
+                  font-size: 1.6rem;
+                  line-height: 1.6;
+                "
+              >
+                <hr />
+              </td>
+            </tr>
+
+            <!-- Footer -->
+            <tr
+              style="
+                display: grid;
+                gap: 3.2rem;
+                padding: 0 4rem;
+                grid-template-columns: 1fr 1fr;
+                background-color: #fff;
+              "
+            >
+              <td class="footer" style="text-align: left; font-size: 1.4rem">
+                <div class="logo">
+                  <img
+                    src="https://meetpad.app/meetpad-logo.svg"
+                    alt="MeetPad logo"
+                    style="width: 50%; position: relative; left: -7px"
+                  />
+                  <p>An all-in-one platform for online consultations.</p>
+                </div>
+              </td>
+              <td
+                class="footer"
+                style="
+                  text-align: left;
+                  font-size: 1.4rem;
+                  align-self: self-start;
+                "
+              >
+                <h3 style="margin-block-start: 0">Get in touch</h3>
+                <a style="color: #000" href="https://www.meetpad.app/"
+                  >https://www.meetpad.app</a
+                >
+                <a href="#" style="color: #000">email@meetpad.app</a>
+                <address>Address:</address>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <script src="" async defer></script>
+  </body>
+</html>`;
+};
